@@ -1,0 +1,12 @@
+name: 'WoWAce-Localization-Import'
+description: 'Find and import localization strings to WoWAce.'
+inputs:
+  args:
+    description: 'Arguments to upload.lua'
+    required: false
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.args }}
