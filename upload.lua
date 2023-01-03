@@ -106,7 +106,7 @@ for _, namespace in ipairs(config.namespaces) do
 
         local buffer = {}
         local request = curl.easy{
-            url      = 'https://www.wowace.com/api/projects/' .. curseProjectID .. '/localization/import',
+            url      = 'https://wow.curseforge.com/api/projects/' .. curseProjectID .. '/localization/import',
             post     = true,
             httpheader = {
                 'X-Api-Token: ' .. CF_API_KEY,
