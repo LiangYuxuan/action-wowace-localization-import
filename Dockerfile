@@ -1,4 +1,4 @@
-FROM alpine:3.20
+FROM alpine:3.21
 
 RUN apk update \
  && apk add --no-cache gcc libc-dev curl-dev curl lua-dev luarocks5.1 \
